@@ -8,7 +8,7 @@ const MeetTeam = () => {
     <>
         <div className="py-10">
             <h3 className={`text-xl text-center font-bold uppercase text-[${ColorCodes.PRIMARY}]`}>Takımımız İle Tanışın</h3>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center flex-wrap">
                 <TeamProfile imgUrl={Profile1}  name="Furkan Can şimşek" position='Front-End Developer'/>
                 <TeamProfile imgUrl={Profile1}  name="Furkan Can şimşek" position='Front-End Developer'/>
                 <TeamProfile imgUrl={Profile1}  name="Furkan Can şimşek" position='Front-End Developer'/>
