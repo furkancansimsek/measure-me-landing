@@ -5,8 +5,8 @@ const NavBar = () => {
     const navItemClass = `text-[${ColorCodes.PRIMARY}] mx-5 uppercase`;
   return (
     <>
-        <ul className='flex justify-center mt-3 flex-wrap pb-2'>
-            <li><a href="#" className={navItemClass}>about us</a></li>
+        <ul className='hidden md:flex justify-center mt-3 flex-wrap pb-2'>
+            <li><a href="#SpecialDesign" className={navItemClass}>about us</a></li>
             <li><a href="#" className={navItemClass}>how it works</a></li>
             <li><a href="#" className={navItemClass}>measure me</a></li>
             <li><a href="#" className={navItemClass}>customize it</a></li>

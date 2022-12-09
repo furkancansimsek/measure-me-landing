@@ -7,6 +7,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'banner': "url('/src/assets/banner.jpg')",
+      },
+      colors: {
+        'primary': "#513834",
+        'myOrange': "#F38C28",
       }
     },
   },

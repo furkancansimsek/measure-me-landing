@@ -1,6 +1,7 @@
 import Banner from "./components/Banner";
 import Layout from "./components/Layout";
 import MeetTeam from "./components/MeetTeam";
+import SpecialDesign from "./components/Sections/SpecialDesign";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
     <Layout>
       <Banner/>
       <MeetTeam/>
+      <SpecialDesign/>
     </Layout>
   </>
   );
