@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'banner': "url('/src/assets/banner.jpg')",
+        'progressBg' : "url('/src/assets/progressBg.svg')",
       },
       colors: {
         'primary': "#513834",
