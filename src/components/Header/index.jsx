@@ -18,7 +18,7 @@ const Header = () => {
       <AppDrawer open={open} setOpen={setOpen}/>
       <div className='sticky top-0 bg-white z-[1000]'>
         <div className={`flex relative justify-between text-[#513834] pt-10 items-center pb-10 md:pb-0`}>
-            <img src={BurgerMenuIcon} className='cursor-pointer' onClick={handleMenuClick}/>
+            <img src={BurgerMenuIcon} className='cursor-pointer pl-3 md:pl-0' onClick={handleMenuClick}/>
             <a href="#" className={`absolute left-[50%] translate-x-[-50%] text-xl font-bold tracking-[0.5rem] text-[${ColorCodes.PRIMARY}]`}>MSARTO™</a>
             <div className="justify-between items-center flex">
                 <a href="#" className={`flex text-[${ColorCodes.PRIMARY}] items-center`}>TR

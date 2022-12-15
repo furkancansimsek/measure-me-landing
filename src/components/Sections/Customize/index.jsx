@@ -7,7 +7,7 @@ const Customize = () => {
     <div id='Customize' className="min-h-[90vh] relative">
         <div className="flex justify-center items-center relative pt-[5rem]">
             <h2 className='text-5xl font-bold'>ÜÇ ADIMDA TARZINIZI ÖZELLESTİRİN</h2>
-            <h2 className='text-9xl absolute right-[10%] font-bold text-myOrange opacity-20'>DENEYİMLEYİN</h2>
+            <h2 className='text-5xl md:text-9xl absolute right-[10%] font-bold text-myOrange opacity-20'>DENEYİMLEYİN</h2>
         </div>
             <div className="flex relative w-full flex-wrap">
                 <span className="bg-myOrange absolute top-0 left-0 w-full h-[200px]"></span>

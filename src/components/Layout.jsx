@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import { BackTop } from 'antd';
 
 const Layout = ({children}) => {
   return (
@@ -7,6 +8,7 @@ const Layout = ({children}) => {
         <div className="min-h-screen container m-auto">
             <Header/>
             {children}
+            <BackTop/>
         </div>
     </>
   )

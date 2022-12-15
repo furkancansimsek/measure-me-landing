@@ -8,6 +8,7 @@ module.exports = {
       backgroundImage: {
         'banner': "url('/src/assets/banner.jpg')",
         'progressBg' : "url('/src/assets/progressBg.svg')",
+        'designCounterBg' : "url('/src/assets/DesignCounterBg.svg')",
       },
       colors: {
         'primary': "#513834",
