@@ -16,10 +16,10 @@ const FadeAndTranslate = ({
     const getAnimate = () =>{
       switch (to) {
         case 'right':
-          return isInView ? { translateX: 0, opacity: 1 } : { translateX: -50, opacity: 0}
+          return isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0}
 
         case 'left':
-          return isInView ? { translateX: 0, opacity: 1 } : { translateX: +50, opacity: 0}
+          return isInView ? { y: 0, opacity: 1 } : { y: +50, opacity: 0}
 
         case 'up':
           return isInView ? { translateY: 0, opacity: 1 } : { translateY: +50, opacity: 0}

@@ -10,4 +10,5 @@ html{
 body{
     font-family: 'Advent Pro', sans-serif !important;
     font-weight: 500 !important;
+    overflow-x: hidden !important;
 }

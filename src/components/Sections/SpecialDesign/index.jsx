@@ -16,7 +16,7 @@ const SpecialDesign = () => {
         <div className={`hidden md:block absolute right-0 top-0 bg-myOrange h-full w-[16rem]`}></div>
         <div className={`hidden md:block absolute left-0 bottom-0 bg-myOrange h-[16rem] w-10`}></div>
         <motion.div 
-        animate={isInView ? { translateX: 0, opacity: 1 } : { translateX: -50, opacity: 0}}
+        animate={isInView ? { y: 0, opacity: 1 } : { y: -50, opacity: 0}}
         ref={ref}
         transition={{duration: 0.5, delay: .5}}
         className="flex items-center flex-wrap z-10">
