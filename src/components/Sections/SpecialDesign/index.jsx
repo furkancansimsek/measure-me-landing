@@ -1,14 +1,25 @@
 import React from 'react';
 import Quote from '../../../assets/quote.svg';
 import SpecialDesignImg from '../../../assets/SpecialDesign.svg';
+import { motion, useInView } from 'framer-motion';
+import { useRef } from 'react';
+import FadeAndTranslateView from '../../Animations/FadeAndTranslateView';
 
 const SpecialDesign = () => {
+
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
+
   return (
     <>
     <div id='SpecialDesign' className="min-h-[90vh] relative">
         <div className={`hidden md:block absolute right-0 top-0 bg-myOrange h-full w-[16rem]`}></div>
         <div className={`hidden md:block absolute left-0 bottom-0 bg-myOrange h-[16rem] w-10`}></div>
-        <div className="flex items-center flex-wrap z-10">
+        <motion.div 
+        animate={isInView ? { translateX: 0, opacity: 1 } : { translateX: -50, opacity: 0}}
+        ref={ref}
+        transition={{duration: 0.5, delay: .5}}
+        className="flex items-center flex-wrap z-10">
             <div className="flex flex-col items-start p-20 w-[100%] md:w-[50%]">
                 <span className={`text-5xl md:text-9xl font-bold text-center text-myOrange uppercase opacity-20`}>Herkes</span>
                 <span className={`text-2xl md:text-5xl font-bold text-center text-primary uppercase`}>Özel Tasarım Kyafetler</span>
@@ -26,7 +37,7 @@ const SpecialDesign = () => {
             <div className="flex w-[45rem] justify-center items-center md:px-20 md:pt-10">
                 <img src={SpecialDesignImg} className='w-full z-10'/>
             </div>
-        </div>
+        </motion.div>
     </div>
     </>
   )

@@ -1,9 +1,13 @@
 import React from 'react';
 import { CircularProgressbar, buildStyles  } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import FadeAndTranslateView from '../../Animations/FadeAndTranslateView';
 
 const CircleProgress = () => {
   return (
+    <FadeAndTranslateView
+    delay={.5}
+    to='bottom'>
     <div className="flex bg-progressBg my-10 bg-no-repeat bg-cover bg-start min-h-[250px] w-full justify-center md:justify-evenly items-center px-[50px]  flex-wrap py-10">
         <div className='w-[175px] flex flex-col mx-5 my-5'>
             <CircularProgressbar value={85} text='16' 
@@ -36,6 +40,7 @@ const CircleProgress = () => {
             <span className='uppercase text-lg text-white font-bold text-center'>%20 ‘YE KADAR DAHA HASSAS ÖLÇÜM</span>
         </div>
     </div>
+    </FadeAndTranslateView>
   )
 }
 

@@ -5,9 +5,13 @@ import MyListItem from '../../MyListItem';
 import Icon1 from '../../../assets/icons/MyDesignerIcons/1.svg';
 import Icon2 from '../../../assets/icons/MyDesignerIcons/2.svg';
 import Icon3 from '../../../assets/icons/MyDesignerIcons/3.svg';
+import FadeAndTranslateView from '../../Animations/FadeAndTranslateView';
 
 const MyDesignerSection = () => {
   return (
+    <FadeAndTranslateView
+    delay={.5}
+    to='left'>
     <div id='MyDesignerSection' className="min-h-[90vh] flex relative flex-wrap pt-10">
         <div className="flex flex-col justify-center md:w-[90%] z-10">
             <h2 className='text-5xl text-primary font-bold px-10'>MY DESIGNER™</h2>
@@ -22,6 +26,7 @@ const MyDesignerSection = () => {
         </div>
         <img src={MyDesignerSectionImg} className='hidden md:block md:w-[10%] md:max-h-[90vh] z-10'/>
     </div>
+    </FadeAndTranslateView>
   )
 }
 

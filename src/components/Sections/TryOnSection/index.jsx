@@ -7,10 +7,13 @@ import Icon4 from '../../../assets/icons/TryOnIcons/4.svg';
 import Icon5 from '../../../assets/icons/TryOnIcons/5.svg';
 import Icon6 from '../../../assets/icons/TryOnIcons/6.svg';
 import TryOnSectionImg from '../../../assets/TryOnSection.svg';
+import FadeAndTranslateView from '../../Animations/FadeAndTranslateView';
 
 const TryOnSection = () => {
   return (
     <>
+    <FadeAndTranslateView
+    delay={.5}>
         <div id='TryOnSection' className="min-h-[90vh] flex relative flex-wrap">
             <div className="bg-myOrange absolute w-full md:w-[30rem] h-[50px] right-0 bottom-0"></div>
             <img src={TryOnSectionImg} className='w-full md:w-[40%] md:max-h-[90vh] z-10'/>
@@ -28,6 +31,7 @@ const TryOnSection = () => {
                 </div>
             </div>
         </div>
+    </FadeAndTranslateView>
     </>
   )
 }

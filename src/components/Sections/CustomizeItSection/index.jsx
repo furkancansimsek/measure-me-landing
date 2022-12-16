@@ -7,10 +7,14 @@ import Icon4 from '../../../assets/icons/CustomizeItIcons/4.svg';
 import Icon5 from '../../../assets/icons/CustomizeItIcons/5.svg';
 import Icon6 from '../../../assets/icons/CustomizeItIcons/6.svg';
 import CustomizeItSectionImg from '../../../assets/CustomizeItSection.svg';
+import FadeAndTranslateView from '../../Animations/FadeAndTranslateView';
 
 const CustomizeItSection = () => {
   return (
     <>
+    <FadeAndTranslateView
+    delay={.5}
+    to='left'>
         <div id='CustomizeItSection' className="min-h-[90vh] flex relative flex-wrap">
             <div className="flex flex-col md:w-[60%] z-10 px-10">
                 <h2 className='text-5xl text-primary font-bold'>CUSTOMIZE IT™</h2>
@@ -28,6 +32,7 @@ const CustomizeItSection = () => {
             <div className="bg-myOrange absolute w-full md:w-[30rem] h-[50px] left-0 bottom-0"></div>
             <img src={CustomizeItSectionImg} className='w-full md:w-[40%] md:max-h-[90vh] z-10'/>
         </div>
+    </FadeAndTranslateView>
     </>
   )
 }

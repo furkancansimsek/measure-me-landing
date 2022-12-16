@@ -1,7 +1,9 @@
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Layout from "./components/Layout";
 import MeetTeam from "./components/MeetTeam";
 import CircleProgress from "./components/Sections/CircleProgress";
+import CommentsSection from "./components/Sections/CommentsSection";
 import Customize from "./components/Sections/Customize";
 import CustomizeItSection from "./components/Sections/CustomizeItSection";
 import DesignCounterSection from "./components/Sections/DesignCounterSection";
@@ -28,6 +30,8 @@ function App() {
       <TryOnSection/>
       <MyDesignerSection/>
       <FollowMeSection/>
+      <CommentsSection/>
+      <Footer/>
     </Layout>
   </>
   );

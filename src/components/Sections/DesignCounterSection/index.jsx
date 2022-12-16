@@ -1,8 +1,12 @@
 import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import FadeAndTranslateView from '../../Animations/FadeAndTranslateView';
 
 const DesignCounterSection = () => {
   return (
+    <FadeAndTranslateView
+    delay={.5}
+    to='bottom'>
     <div className="flex bg-designCounterBg my-10 bg-no-repeat bg-cover bg-center min-h-[250px] w-full justify-center md:justify-evenly items-center px-[50px]  flex-wrap py-10">
         <div className="flex flex-col">
             <h2 className='text-2xl font-bold text-white text-center'>BİRBİRİNDEN FARKLI TASARIM SEÇENEKLERİ İLE</h2>
@@ -105,6 +109,7 @@ const DesignCounterSection = () => {
             </div>
         </div>
     </div>
+    </FadeAndTranslateView>
   )
 }
 
